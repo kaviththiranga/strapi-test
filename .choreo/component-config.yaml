@@ -1,0 +1,14 @@
+apiVersion: core.choreo.dev/v1alpha1
+kind: ComponentConfig
+metadata:
+    name: My Strapi API
+    projectName: Default Project
+spec:
+    build:
+        branch: main
+    inbound:
+        - name: My Strapi API
+          port: 1337
+          type: REST
+          visibility: Public
+          context: /
